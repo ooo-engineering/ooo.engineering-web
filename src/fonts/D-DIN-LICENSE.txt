@@ -1,0 +1,4 @@
+Copyright (c) 2017, Datto Inc. https://www.datto.com/fonts/d-din
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is available at http://scripts.sil.org/OFL

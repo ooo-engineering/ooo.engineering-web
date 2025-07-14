@@ -1,0 +1,299 @@
+/* Atelier - Luxury Maison Style */
+
+/* Reset and Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --atelier-black: #000000;
+    --atelier-white: #ffffff;
+    --atelier-gray: #666666;
+    --atelier-light-gray: #f5f5f5;
+    --atelier-beige: #f9f7f4;
+}
+
+body {
+    font-family: 'Crimson Text', 'Noto Sans JP', serif;
+    color: var(--atelier-black);
+    background: var(--atelier-white);
+    line-height: 1.6;
+    letter-spacing: 0.02em;
+}
+
+body.lang-en {
+    font-family: 'Crimson Text', 'D-DIN', serif;
+}
+
+/* Container Styles */
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.container-narrow {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+/* Header */
+.atelier-header {
+    background: var(--atelier-white);
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.atelier-header .logo img {
+    filter: grayscale(100%) contrast(200%);
+}
+
+/* Hero Section */
+.atelier-hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--atelier-beige);
+    position: relative;
+}
+
+.hero-inner {
+    text-align: center;
+}
+
+.atelier-title {
+    font-family: 'Didot', 'Crimson Text', serif;
+    font-size: 5rem;
+    font-weight: 400;
+    letter-spacing: 0.3em;
+    margin-bottom: 2rem;
+}
+
+.subtitle-line {
+    width: 60px;
+    height: 1px;
+    background: var(--atelier-black);
+    margin: 2rem auto;
+}
+
+.atelier-subtitle {
+    font-size: 1.1rem;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+/* Section Titles */
+.section-title {
+    font-family: 'Didot', 'Crimson Text', serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+}
+
+.section-title.center {
+    text-align: center;
+}
+
+/* Manifesto Section */
+.manifesto-section {
+    padding: 120px 0;
+    background: var(--atelier-white);
+}
+
+.manifesto-text {
+    font-size: 1.25rem;
+    line-height: 2;
+    text-align: center;
+    color: var(--atelier-black);
+}
+
+/* Savoir-Faire Section */
+.savoir-faire-section {
+    padding: 120px 0;
+    background: var(--atelier-light-gray);
+}
+
+.expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    margin-top: 60px;
+}
+
+.expertise-item {
+    text-align: center;
+}
+
+.expertise-number {
+    font-family: 'Didot', serif;
+    font-size: 3rem;
+    font-weight: 300;
+    color: var(--atelier-gray);
+    margin-bottom: 1.5rem;
+}
+
+.expertise-item h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.expertise-item p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--atelier-gray);
+}
+
+/* Services Section */
+.services-section {
+    padding: 120px 0;
+    background: var(--atelier-white);
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+    margin-top: 80px;
+}
+
+.service-item {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.service-image {
+    width: 100%;
+    height: 400px;
+    background: var(--atelier-light-gray);
+    position: relative;
+    overflow: hidden;
+}
+
+.service-image::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 1px;
+    background: var(--atelier-gray);
+}
+
+.service-content h3 {
+    font-family: 'Didot', 'Crimson Text', serif;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+.service-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--atelier-gray);
+    text-align: justify;
+}
+
+/* Atelier Section */
+.atelier-section {
+    padding: 120px 0;
+    background: var(--atelier-beige);
+}
+
+.atelier-content {
+    text-align: center;
+}
+
+.atelier-content p {
+    font-size: 1.25rem;
+    line-height: 2;
+    color: var(--atelier-black);
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 120px 0;
+    background: var(--atelier-white);
+    text-align: center;
+}
+
+.contact-content p {
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+    color: var(--atelier-gray);
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 20px 60px;
+    border: 1px solid var(--atelier-black);
+    color: var(--atelier-black);
+    text-decoration: none;
+    font-size: 0.9rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.contact-button:hover {
+    background: var(--atelier-black);
+    color: var(--atelier-white);
+}
+
+/* Footer */
+.site-footer {
+    background: var(--atelier-black);
+    color: var(--atelier-white);
+    padding: 40px 0;
+    text-align: center;
+    font-size: 0.9rem;
+    letter-spacing: 0.1em;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .expertise-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .service-grid {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .atelier-title {
+        font-size: 3rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .container,
+    .container-narrow {
+        padding: 0 20px;
+    }
+    
+    .manifesto-section,
+    .savoir-faire-section,
+    .collections-section,
+    .atelier-section,
+    .contact-section {
+        padding: 60px 0;
+    }
+}

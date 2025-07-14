@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>edu.ooo.engineering - Next Generation IT Creators</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="edu.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <div id="body">
+        <header class="site-header">
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo">
+                        <a href="/">
+                            <img src="../assets/logo.png" alt="ooo.engineering">
+                        </a>
+                    </div>
+                    <nav class="main-nav">
+                        <ul>
+                            <li><a href="/" data-ja="コーポレートサイト" data-en="Corporate Site">コーポレートサイト</a></li>
+                        </ul>
+                        <button class="lang-switch" id="langSwitch">
+                            <span class="lang-ja">EN</span>
+                            <span class="lang-en">日本語</span>
+                        </button>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero-section edu-hero">
+                <div class="container">
+                    <h1 class="edu-title" data-ja="教育で未来を創る" data-en="Creating the Future Through Education">
+                        教育で未来を創る
+                    </h1>
+                    <p class="edu-tagline" data-ja="想像力に、翼を。コードで描く、無限の可能性" data-en="Wings to Imagination. Infinite Possibilities Through Code">
+                        想像力に、翼を。コードで描く、無限の可能性
+                    </p>
+                </div>
+                <div class="hero-animation" id="codeAnimation">
+                    <canvas id="heroCanvas"></canvas>
+                    <div class="code-layers">
+                        <pre class="code-snippet snippet-1"><code>import SwiftUI
+import Foundation</code></pre>
+                        <pre class="code-snippet snippet-2"><code>struct EducationView: View {
+    @State private var inspire = true
+    @State private var future = "∞"</code></pre>
+                        <pre class="code-snippet snippet-3"><code>    var body: some View {
+        VStack {
+            Text("未来を創る")
+                .font(.largeTitle)
+                .foregroundColor(.purple)</code></pre>
+                        <pre class="code-snippet snippet-4"><code>            Button("Learn & Create") {
+                withAnimation {
+                    inspire.toggle()
+                }
+            }</code></pre>
+                        <pre class="code-snippet snippet-5"><code>        }
+        .padding()
+        .background(Color.black.opacity(0.8))
+    }
+}</code></pre>
+                    </div>
+                </div>
+            </section>
+
+            <section class="services-section">
+                <div class="container">
+                    <h2 data-ja="私たちのサービス" data-en="Our Services">私たちのサービス</h2>
+                    <div class="services-grid">
+                        <div class="service-card school-it">
+                            <div class="service-icon">🏫</div>
+                            <h3 data-ja="学校向けIT授業" data-en="IT Classes for Schools">学校向けIT授業</h3>
+                            <p data-ja="小学校から高校まで、各学年に最適化されたカリキュラムを提供。プログラミングの基礎から実践的なアプリ開発まで、楽しく学べる授業を展開します。" data-en="From elementary to high school, we provide optimized curricula for each grade level. From programming basics to practical app development, we offer engaging classes.">
+                                小学校から高校まで、各学年に最適化されたカリキュラムを提供。プログラミングの基礎から実践的なアプリ開発まで、楽しく学べる授業を展開します。
+                            </p>
+                            <ul class="service-features">
+                                <li data-ja="出張授業・オンライン授業対応" data-en="On-site and online classes available">出張授業・オンライン授業対応</li>
+                                <li data-ja="学習指導要領準拠" data-en="Aligned with curriculum guidelines">学習指導要領準拠</li>
+                                <li data-ja="実機を使った体験型学習" data-en="Hands-on learning with real devices">実機を使った体験型学習</li>
+                            </ul>
+                        </div>
+                        <div class="service-card teacher-training">
+                            <div class="service-icon">👩‍🏫</div>
+                            <h3 data-ja="教員研修プログラム" data-en="Teacher Training Program">教員研修プログラム</h3>
+                            <p data-ja="IT教育を担当する先生方向けの実践的な研修プログラム。プログラミング教育の指導法から最新技術まで、自信を持って教えられるようサポートします。" data-en="Practical training programs for teachers responsible for IT education. From programming teaching methods to the latest technologies, we support teachers to teach with confidence.">
+                                IT教育を担当する先生方向けの実践的な研修プログラム。プログラミング教育の指導法から最新技術まで、自信を持って教えられるようサポートします。
+                            </p>
+                            <ul class="service-features">
+                                <li data-ja="段階別スキルアップ研修" data-en="Progressive skill development training">段階別スキルアップ研修</li>
+                                <li data-ja="教材・カリキュラム提供" data-en="Teaching materials and curriculum provided">教材・カリキュラム提供</li>
+                                <li data-ja="継続的なサポート体制" data-en="Ongoing support system">継続的なサポート体制</li>
+                            </ul>
+                        </div>
+                        <div class="service-card ios-community">
+                            <div class="service-icon">📱</div>
+                            <h3 data-ja="学生iOSデベロッパーコミュニティ" data-en="Student iOS Developer Community">学生iOSデベロッパーコミュニティ</h3>
+                            <p data-ja="アプリ開発に情熱を持つ学生たちが集まるコミュニティ。実際のアプリ開発プロジェクトを通じて、技術力とチームワークを育みます。" data-en="A community where students passionate about app development gather. Through real app development projects, we foster technical skills and teamwork.">
+                                アプリ開発に情熱を持つ学生たちが集まるコミュニティ。実際のアプリ開発プロジェクトを通じて、技術力とチームワークを育みます。
+                            </p>
+                            <ul class="service-features">
+                                <li data-ja="プロジェクトベースの共同開発" data-en="Project-based collaborative development">プロジェクトベースの共同開発</li>
+                                <li data-ja="App Store公開サポート" data-en="App Store publishing support">App Store公開サポート</li>
+                                <li data-ja="WWDC参加支援" data-en="WWDC participation support">WWDC参加支援</li>
+                            </ul>
+                        </div>
+                        <div class="service-card fab-facility">
+                            <div class="service-icon">🏭</div>
+                            <h3 data-ja="Fab施設構築・教育" data-en="Fab Facility Setup & Education">Fab施設構築・教育</h3>
+                            <p data-ja="3Dプリンター、レーザーカッター、CNCなどのデジタル工作機器を活用したFab施設の構築から運営まで総合的にサポート。ものづくり教育の新しい形を提案します。" data-en="Comprehensive support from construction to operation of Fab facilities utilizing digital fabrication equipment such as 3D printers, laser cutters, and CNC machines. We propose new forms of manufacturing education.">
+                                3Dプリンター、レーザーカッター、CNCなどのデジタル工作機器を活用したFab施設の構築から運営まで総合的にサポート。ものづくり教育の新しい形を提案します。
+                            </p>
+                            <ul class="service-features">
+                                <li data-ja="施設設計・機器選定コンサルティング" data-en="Facility design and equipment selection consulting">施設設計・機器選定コンサルティング</li>
+                                <li data-ja="指導者向け技術研修" data-en="Technical training for instructors">指導者向け技術研修</li>
+                                <li data-ja="カリキュラム開発支援" data-en="Curriculum development support">カリキュラム開発支援</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="approach-section">
+                <div class="container">
+                    <h2 data-ja="私たちのアプローチ" data-en="Our Approach">私たちのアプローチ</h2>
+                    <div class="approach-grid">
+                        <div class="approach-item">
+                            <div class="approach-number">01</div>
+                            <h3 data-ja="楽しく学ぶ" data-en="Learn with Joy">楽しく学ぶ</h3>
+                            <p data-ja="プログラミングは楽しい！その喜びを伝えることから始めます。ゲーム作りやアプリ開発を通じて、自然に技術が身につく環境を提供。" data-en="Programming is fun! We start by conveying that joy. Through game creation and app development, we provide an environment where skills are naturally acquired.">
+                                プログラミングは楽しい！その喜びを伝えることから始めます。ゲーム作りやアプリ開発を通じて、自然に技術が身につく環境を提供。
+                            </p>
+                        </div>
+                        <div class="approach-item">
+                            <div class="approach-number">02</div>
+                            <h3 data-ja="実践重視" data-en="Practice-Oriented">実践重視</h3>
+                            <p data-ja="理論の詰め込みではなく、手を動かして学ぶことを重視。実際に動くものを作る経験が、真の理解と自信につながります。" data-en="Rather than cramming theory, we emphasize learning by doing. The experience of creating something that actually works leads to true understanding and confidence.">
+                                理論の詰め込みではなく、手を動かして学ぶことを重視。実際に動くものを作る経験が、真の理解と自信につながります。
+                            </p>
+                        </div>
+                        <div class="approach-item">
+                            <div class="approach-number">03</div>
+                            <h3 data-ja="継続的成長" data-en="Continuous Growth">継続的成長</h3>
+                            <p data-ja="一度学んで終わりではなく、継続的に成長できる環境を提供。コミュニティやメンタリングを通じて、長期的な学習をサポート。" data-en="We provide an environment for continuous growth, not just one-time learning. Through community and mentoring, we support long-term learning.">
+                                一度学んで終わりではなく、継続的に成長できる環境を提供。コミュニティやメンタリングを通じて、長期的な学習をサポート。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cta-section edu-cta">
+                <div class="container">
+                    <h2 data-ja="一緒に教育の未来を創りませんか" data-en="Let's Create the Future of Education Together">一緒に教育の未来を創りませんか</h2>
+                    <p data-ja="学校・教師・学生の皆様からのお問い合わせをお待ちしています" data-en="We look forward to hearing from schools, teachers, and students">
+                        学校・教師・学生の皆様からのお問い合わせをお待ちしています
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="mailto:info@ooo.engineering" class="cta-button primary" data-ja="お問い合わせ" data-en="Contact Us">お問い合わせ</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <p>© 2025 ooo.engineering Inc. All rights reserved.</p>
+                <nav class="footer-nav">
+                    <a href="/" data-ja="コーポレートサイト" data-en="Corporate Site">コーポレートサイト</a>
+                </nav>
+            </div>
+        </footer>
+    </div>
+
+    <script type="module" src="edu.js"></script>
+</body>
+</html>
