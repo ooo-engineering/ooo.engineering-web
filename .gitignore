@@ -65,6 +65,61 @@ node_modules/
 # dotenv environment variables file
 .env
 .env.local
+.env.*.local
+.env.development.local
+.env.test.local
+.env.production.local
 
 # dataconnect generated files
 .dataconnect
+
+# Build output
+public/
+dist/
+build/
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor directories and files
+.idea
+.vscode
+*.swp
+*.swo
+*~
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# Package manager lock files (uncomment if you want to exclude them)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# Temporary files
+*.tmp
+*.temp
+.cache
+
+# Vite
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+# Testing
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Optional stylelint cache
+.stylelintcache
+
+# Firebase config
+.firebaserc
