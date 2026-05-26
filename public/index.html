@@ -4,37 +4,147 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ooo.engineering</title>
-    <link rel="stylesheet" href="style.css">
+    
+    <!-- Preload D-DIN fonts -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/gh/amcchord/datto-d-din@main/fonts/D-DIN.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://cdn.jsdelivr.net/gh/amcchord/datto-d-din@main/fonts/D-DIN-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- Google Fonts for Japanese -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    
+  <script type="module" crossorigin src="/assets/main-CMQAEohS.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/style-BTV2A7ij.js">
+  <link rel="stylesheet" crossorigin href="/assets/style-CM-txxEq.css">
 </head>
 <body>
     <div id="body">
-        <div class="logo-container">
-            <img src="assets/logo.png" alt="Logo">
-        </div>
+        <header class="site-header">
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo">
+                        <img src="/assets/logo-DgmF9lKD.png" alt="ooo.engineering">
+                    </div>
+                    <nav class="main-nav">
+                        <ul>
+                            <li><a href="#home" data-ja="ホーム" data-en="Home">ホーム</a></li>
+                            <li><a href="#services" data-ja="サービス" data-en="Services">サービス</a></li>
+                            <li><a href="#about" data-ja="会社概要" data-en="About">会社概要</a></li>
+                            <li><a href="#contact" data-ja="お問い合わせ" data-en="Contact">お問い合わせ</a></li>
+                        </ul>
+                        <button class="lang-switch" id="langSwitch">
+                            <span class="lang-ja">EN</span>
+                            <span class="lang-en">日本語</span>
+                        </button>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section id="home" class="hero-section">
+                <div class="container">
+                    <h1 class="slogan">
+                        <span class="slogan-line" data-ja="神は細部に宿る。" data-en="God is in the details.">神は細部に宿る。</span><br>
+                        <span class="slogan-line" data-ja="つきつめたエンジニアリングには、魂が宿る。" data-en="The soul is in the engineering.">つきつめたエンジニアリングには、魂が宿る。</span>
+                    </h1>
+                </div>
+            </section>
+
+            <section id="services" class="services-section">
+                <div class="container">
+                    <h2 data-ja="サービス" data-en="Services">サービス</h2>
+                    <div class="services-grid" id="servicesGrid">
+                        <!-- Service links will be dynamically generated -->
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="about-section">
+                <div class="container">
+                    <h2 data-ja="会社概要" data-en="About Us">会社概要</h2>
+                    
+                    <div class="vmpv-section">
+                        <div class="statement-item">
+                            <h3 data-ja="ビジョン" data-en="Vision">ビジョン</h3>
+                            <p data-ja="世界を代表するエンジニアリングカンパニーとなり、業界を牽引する。" data-en="To become a world-leading engineering company and drive the industry forward.">
+                                世界を代表するエンジニアリングカンパニーとなり、業界を牽引する。
+                            </p>
+                        </div>
+                        
+                        <div class="statement-item">
+                            <h3 data-ja="ミッション" data-en="Mission">ミッション</h3>
+                            <p data-ja="人々が笑顔になる瞬間をつくりだす。" data-en="Creating moments that bring smiles to people's faces.">
+                                人々が笑顔になる瞬間をつくりだす。
+                            </p>
+                        </div>
+                        
+                        <div class="statement-item">
+                            <h3 data-ja="パーパス" data-en="Purpose">パーパス</h3>
+                            <p data-ja="昨日なかったものを作り出し、人々の生活を豊かにする。" data-en="Creating what didn't exist yesterday to enrich people's lives.">
+                                昨日なかったものを作り出し、人々の生活を豊かにする。
+                            </p>
+                        </div>
+                        
+                        <div class="statement-item">
+                            <h3 data-ja="バリュー" data-en="Values">バリュー</h3>
+                            <ul class="values-list-centered">
+                                <li data-ja="Innovation - 革新" data-en="Innovation">Innovation - 革新</li>
+                                <li data-ja="Inclusion - 包括性" data-en="Inclusion">Inclusion - 包括性</li>
+                                <li data-ja="Passion - 情熱" data-en="Passion">Passion - 情熱</li>
+                                <li data-ja="Curiosity - 好奇心" data-en="Curiosity">Curiosity - 好奇心</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="content-grid">
+                        <div class="content-item">
+                            <h3 data-ja="企業情報" data-en="Company Information">企業情報</h3>
+                            <dl>
+                                <dt data-ja="会社名" data-en="Company Name">会社名</dt>
+                                <dd>ooo.engineering Inc.</dd>
+                                <dt data-ja="設立" data-en="Founded">設立</dt>
+                                <dd data-ja="2025年3月" data-en="March 2025">2025年3月</dd>
+                                <dt data-ja="資本金" data-en="Capital">資本金</dt>
+                                <dd data-ja="525万円" data-en="5.25 million JPY">525万円</dd>
+                                <dt data-ja="代表取締役" data-en="CEO">代表取締役</dt>
+                                <dd data-ja="尾崎 正和" data-en="Masakazu Ozaki">尾崎 正和</dd>
+                                <dt data-ja="メンバー" data-en="Members">メンバー</dt>
+                                <dd data-ja="正式メンバー 4名 / 業務委託 3名" data-en="4 Official Members / 3 Contractors">正式メンバー 4名 / 業務委託 3名</dd>
+                                <dt data-ja="本社所在地" data-en="Head Office">本社所在地</dt>
+                                <dd data-ja="〒263-0043 千葉県千葉市稲毛区小仲台6-3-20" data-en="6-3-20 Konakadai, Inage-ku, Chiba-shi, Chiba 263-0043">〒263-0043 千葉県千葉市稲毛区小仲台6-3-20</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="contact-section">
+                <div class="container">
+                    <h2 data-ja="お問い合わせ" data-en="Contact">お問い合わせ</h2>
+                    <p data-ja="ご質問やご相談がございましたら、お気軽にお問い合わせください。" data-en="Please feel free to contact us for any questions or consultations.">
+                        ご質問やご相談がございましたら、お気軽にお問い合わせください。
+                    </p>
+                    <a href="mailto:info@ooo.engineering" class="contact-link">info@ooo.engineering</a>
+                </div>
+            </section>
+        </main>
+
         <footer class="site-footer">
-            Copyright © 2024 ooo.engineering Inc. All rights reserved. 
+            <div class="container">
+                <p data-ja="© 2025 ooo.engineering Inc. All rights reserved." data-en="© 2025 ooo.engineering Inc. All rights reserved.">
+                    © 2025 ooo.engineering Inc. All rights reserved.
+                </p>
+                <nav class="footer-nav">
+                    <a href="/digital/privacy.html" data-ja="wooowプライバシーポリシー" data-en="wooow Privacy Policy">wooowプライバシーポリシー</a>
+                    <a href="/digital/terms.html" data-ja="wooow利用規約" data-en="wooow Terms of Use">wooow利用規約</a>
+                </nav>
+            </div>
         </footer>
     </div>
 
-    <!-- Vanta.js, three.jsの読み込み -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.dots.min.js"></script>
-    <script>
-        VANTA.DOTS({
-          el: "#body",
-          mouseControls: true,
-          touchControls: true,
-          gyroControls: false,
-          minHeight: 200.00,
-          minWidth: 200.00,
-          scale: 1.00,
-          scaleMobile: 1.00,
-          color: 0xc3c3c3,
-          color2: 0x0,
-          backgroundColor: 0xffffff,
-          spacing: 31.00,
-          showLines: false
-        })
-    </script>
 </body>
 </html>

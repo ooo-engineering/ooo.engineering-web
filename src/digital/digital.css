@@ -1,4 +1,9 @@
 /* Digital Page Specific Styles */
+
+/* Ensure body has proper background for privacy/terms pages */
+body {
+    background-color: #ffffff;
+}
 .digital-hero {
     background: #2D2E32;
     color: white;
