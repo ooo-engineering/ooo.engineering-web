@@ -7,7 +7,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 This is a multilingual (Japanese/English) corporate website for ooo.engineering, built with Vite and deployed on Firebase Hosting. The site consists of a main corporate site and three service subdomains:
 
 - **Main Site**: Corporate information, company overview, and service links
-- **Digital** (digital.ooo.engineering): Wooow app - handwriting-based location sharing app
+- **Digital** (digital.ooo.engineering): Wooow app - handwriting-based location sharing app, and Raylie - flight view guide app (`/digital/raylie.html`, assets in `src/assets/raylie/`)
 - **Atelier** (atelier.ooo.engineering): Bespoke leather goods
 - **Edu** (edu.ooo.engineering): Next-generation IT creator education
 
@@ -31,6 +31,8 @@ ooo.engineering-web/
 │   ├── digital/           # Digital service (wooow app)
 │   │   ├── index.html     # Wooow app main page
 │   │   ├── privacy.html   # Privacy policy page
+│   │   ├── terms.html     # Terms of use page
+│   │   ├── raylie.html    # Raylie app (flight view guide) landing page
 │   │   ├── digital.css    # Digital-specific styles
 │   │   └── digital.js     # Digital-specific JavaScript
 │   ├── atelier/           # Atelier service
