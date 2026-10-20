@@ -1,5 +1,13 @@
 // Service configuration with environment variables
+const digitalBase = (import.meta.env.VITE_DIGITAL_URL || '/digital/').replace(/\/$/, '');
+
 const services = [
+  {
+    url: `${digitalBase}/raylie.html`,
+    domain: 'Raylie',
+    titleJa: 'See what\'s waiting outside.',
+    titleEn: 'See what\'s waiting outside.'
+  },
   {
     url: import.meta.env.VITE_DIGITAL_URL || '/digital/',
     domain: 'digital.ooo.engineering',
